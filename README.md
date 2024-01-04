@@ -15,7 +15,7 @@ I'm Anshul Chaudhary. Thanks for stopping by! Let me share some information abou
   - [Website](https://chaudharyanshul.com/)
 
 ## About Me
-I'm a passionate and driven individual with a keen interest in data science and web development. Currently, I'm working on a project related to [insert project topic], and I'm always open to new ideas and collaborations.
+I'm a passionate and driven individual with a keen interest in data science and web development. Currently, I'm working on a project related to Real-Time Data, and I'm always open to new ideas and collaborations.
 
 ## Projects
 Here are some of the projects I've worked on or currently working on:
