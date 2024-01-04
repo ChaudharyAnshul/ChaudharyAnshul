@@ -10,7 +10,7 @@ I'm Anshul Chaudhary. Thanks for stopping by! Let me share some information abou
 - 👯 I’m looking to collaborate on:
   - Web Development
   - Machine Learning
-- 🚀 Projects:
+- 🚀 Current Projects:
   - [Protfolio Website](https://github.com/ChaudharyAnshul/Anshul_Personal_Website): A protfolio website, built using React, is designed to provide glimpse into my professional journey and accomplishments.
   - [Real-Time Stock Market Data Processing](https://github.com/ChaudharyAnshul/Stock-Market-Real-Time-Data)
 - 🌟 Interests: Apart from coding and data analysis, I have a deep interest in
