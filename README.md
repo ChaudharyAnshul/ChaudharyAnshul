@@ -10,9 +10,6 @@ I'm Anshul Chaudhary. Thanks for stopping by! Let me share some information abou
 - 👯 I’m looking to collaborate on:
   - Web Development
   - Machine Learning
-- 🤔 I’m looking for help with:
-  - Developing/Debugging Python code
-  - Database/System design
 - 📫 How to reach me:
   - [LinkedIn](https://www.linkedin.com/in/chaudharyanshul/)
   - [Website](https://chaudharyanshul.com/)
