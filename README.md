@@ -11,8 +11,7 @@
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Data Engineering
 <br>
 🚀 Current Projects:
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Web Extension Agent: Using Gemini Nano as LLM engine running locally in Chrome
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Generative AI Financial Advisor: Training a model to suggest Strategies based on Trader Philosophies
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- TDB: Hit my up with Ideas :)
 <br>
 🌟 Interests: Apart from coding and AI, I have a deep interest in
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Outdoor Adventures 🏞️
