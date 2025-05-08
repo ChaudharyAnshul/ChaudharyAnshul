@@ -1,10 +1,9 @@
 # 💫 About Me:
 
-🔭 I’m currently pursuing my Master's Degree at Northeastern University.
+Graduated with a Master of Science in Software Engineering Systems (GPA: 4.0) from Northeastern University. Passionate about building scalable systems, and impactful full-stack applications. Always eager to learn, experiment, and deliver real-world solutions.
 <br>
 🌱 I’m currently learning:
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Generative AI
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Data Modeling
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Deep Learning
 <br>
 👯 I’m looking to collaborate on:
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Software Development
@@ -27,10 +26,11 @@ Portfolio: [chaudharyanshul.com](https://chaudharyanshul.com/)
 
 
 # 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=chaudharyAnshul&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
 ![](https://github-readme-streak-stats.herokuapp.com/?user=chaudharyAnshul&theme=dark&hide_border=false)<br/>
+<!---
+![](https://github-readme-stats.vercel.app/api?username=chaudharyAnshul&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=chaudharyAnshul&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
-
+--->
 <br>Thanks again for visiting, and I look forward to connecting with you!<br>
 ---
 [![](https://visitcount.itsvg.in/api?id=chaudharyAnshul&icon=0&color=0)](https://visitcount.itsvg.in)
