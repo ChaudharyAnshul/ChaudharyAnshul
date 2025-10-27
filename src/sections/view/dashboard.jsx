@@ -23,7 +23,7 @@ export default function AppView() {
     <Container maxWidth="xl">
       <br />
       <br />
-      <Grid container spacing={3}>
+      <Grid container spacing={4}>
 
         {/* Personal Info */}
         <Grid md={12} lg={12}>
