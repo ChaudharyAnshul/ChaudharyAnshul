@@ -1,0 +1,16 @@
+export const projectList = [
+  { id: '1', projectName: 'Policy Tracking Platform', techStack: 'React, FastAPI, Airflow, Llama, MongoDB, Pinecone, Hugging Face', gitURL: "https://github.com/TFC-Civic-Tech-Hackathon/PoliSightsAI"},
+  { id: '2', projectName: 'News Extraction and Recommendation System', techStack: 'ETL, Airflow, Snowflake, Kafka, CI/CD, MongoDB, FastAPI, Beautiful Soup, Spacy, OpenAI, GPT', gitURL: "https://github.com/BigDataIA-Spring2024-Sec2-Team2/Final-Project"},
+  { id: '3', projectName: 'Finance Tracking System', techStack: 'MERN Stack, MongoDB, Express, React, Node.js, JWT, Clerk, TypeScript, CSS', gitURL: "https://github.com/ChaudharyAnshul/Finance-Tracker"},
+  { id: '4', projectName: 'Content Management System', techStack: 'Java, Spring boot, React, MongoDB, Object Oriented Programming', gitURL: "https://github.com/ChaudharyAnshul/Content-Management-System"},
+  { id: '5', projectName: 'Electric Vehicle Analysis Dashboard', techStack: 'Tableau, Data Visualization, Data Analysis, Business Intelligence', gitURL: "https://public.tableau.com/app/profile/anshul.chaudhary3806/viz/EVDashboard_17195951286360/Dashboard1"},
+  { id: '6', projectName: 'Transformer Chatbot', techStack: 'Deep Learning, Python, Transformers, PyTorch, GPU cluster', gitURL: "https://github.com/ChaudharyAnshul/transformer_chatbot"},
+  { id: '7', projectName: 'PharmaCutieCal: Drug Side Effect Analysis', techStack: 'React, Flask, MongoDB, Machine Learning, Hyperparameter Tuning, Random Forest Classification', gitURL: "https://github.com/TFC-Civic-Tech-Hackathon/drug-effects-predictor"},
+  { id: '8', projectName: 'Sentimental Analysis Amazon Review Data', techStack: 'Parallel Deep Learning, Python, LSTM, PyTorch, Dask, GPU cluster, Linux', gitURL: "https://github.com/ChaudharyAnshul/SentimentalAnalysis_Parallel_DL"},
+  { id: '9', projectName: 'Knowledge Retrieval System (RAG Application)', techStack: 'RAG, Generative AI, ETL, Airflow, Snowflake, GCP, OpenAI, LLM, Pinecone Vector DB', gitURL: "https://github.com/BigDataIA-Spring2024-Sec2-Team2/Assignment-5"},
+  { id: '10', projectName: 'Automated PDF Data Extraction and Querying', techStack: 'Snowflake, data pipelining, Airflow, DBT, AWS, PyPDF, Data extraction', gitURL: "https://github.com/ChaudharyAnshul/PDF-Data-Extraction"},
+  { id: '11', projectName: 'Text Classification using LLM (Financial Data)', techStack: 'Python, LLM models, HuggingFace BERT, PyTorch, Scikit-Learn, Machine Learning', gitURL: "https://github.com/ChaudharyAnshul/TextClassification"},
+  { id: '12', projectName: 'Stock Market Real-Time Data Pipeline', techStack: 'Python, SQL, AWS, EC2, S3, Glue, Athena, Kafka, Docker', gitURL: "https://github.com/ChaudharyAnshul/Stock-Market-Real-Time-Data"},
+  { id: '13', projectName: 'British Airways Review Analysis', techStack: 'Sentiment analysis, Data Scraping, Data visualization, Transformer model, Machine learning, SciPy', gitURL: "https://github.com/ChaudharyAnshul/BritishAirways_ReviewAnalysis"},
+  { id: '14', projectName: 'Stock Close Price Prediction', techStack: 'Machine Learning, Exploratory Data Analysis, Feature selection, Hyperparameter Tuning, AutoML', gitURL: "https://github.com/ChaudharyAnshul/StockClosePricePrediction"},
+];
