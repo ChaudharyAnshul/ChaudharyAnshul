@@ -26,12 +26,12 @@ export default function AppView() {
       <Grid container spacing={3}>
 
         {/* Personal Info */}
-        <Grid xs={12} md={7} lg={6}>
+        <Grid md={12} lg={12}>
           <ProfileCard /> 
         </Grid>
 
         {/* What do I do? */}
-        <Grid xs={12} md={5} lg={6}>
+        <Grid sm={12} md={12} lg={4}>
           <ImageCard title='What Do I Do?' subheader="Feel Free to Checkout Individual Work"/>
         </Grid>
 
