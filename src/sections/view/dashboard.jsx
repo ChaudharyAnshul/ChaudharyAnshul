@@ -5,7 +5,6 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
-
 import PieChart from "../pie-chart";
 import RadarGraph from "../radar-graph";
 import ProfileCard from "./profile-card";
@@ -15,7 +14,6 @@ import TimeLineVisual from "../timeline-visual";
 import ImageCard from "../animated-folder-Card";
 import BarChartVertical from "../bar-chart-vertical";
 import BarChartHorizontal from "../bar-chart-horizontal";
-import WidgetSummary from '../widget-summary';
 import { skills } from "../../config/skills";
 import { InterPersonalData } from "../../config/interpersonal";
 import { engineeringJourney } from "../../config/engineering-journey";

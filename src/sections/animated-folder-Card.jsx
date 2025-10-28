@@ -1,13 +1,11 @@
-import React from "react";
 import PropTypes from "prop-types";
-
 import Box from "@mui/material/Box";
 import { styled } from "@mui/system";
 import Card from "@mui/material/Card";
 import Grid from "@mui/material/Grid";
 import CardHeader from "@mui/material/CardHeader";
 import CardContent from "@mui/material/CardContent";
-import Link from "@mui/material/Link";
+
 
 const ImageBox = styled(Box)(() => ({
   position: "relative",
