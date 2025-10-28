@@ -10,7 +10,7 @@ import Chart, { useChart } from '../components/chart';
 
 // ----------------------------------------------------------------------
 
-const CHART_HEIGHT = 400;
+const CHART_HEIGHT = 370;
 
 const LEGEND_HEIGHT = 72;
 
@@ -80,7 +80,7 @@ export default function PieChart({ title, subheader, chart, ...other }) {
 
   return (
     <Card {...other}>
-      <CardHeader title={title} subheader={subheader} sx={{ mb: 5 }} />
+      <CardHeader title={title} subheader={subheader} sx={{ mb: 2 }} />
 
       <StyledChart
         dir="ltr"
@@ -88,7 +88,7 @@ export default function PieChart({ title, subheader, chart, ...other }) {
         series={chartSeries}
         options={chartOptions}
         width="100%"
-        height={300}
+        height={280}
       />
     </Card>
   );

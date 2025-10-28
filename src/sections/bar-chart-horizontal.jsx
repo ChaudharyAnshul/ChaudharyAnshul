@@ -52,7 +52,7 @@ export default function BarChartHorizontal({ title, subheader, chart, ...other }
           series={[{ data: chartSeries }]}
           options={chartOptions}
           width="100%"
-          height={364}
+          height={400}
         />
       </Box>
       <Box sx={{ p: 2, textAlign: 'right' }}>

@@ -8,7 +8,7 @@ import Chart, { useChart } from '../components/chart';
 
 // ----------------------------------------------------------------------
 
-const CHART_HEIGHT = 400;
+const CHART_HEIGHT = 350;
 
 const LEGEND_HEIGHT = 72;
 
@@ -19,7 +19,6 @@ const StyledChart = styled(Chart)(({ theme }) => ({
   },
   '& .apexcharts-legend': {
     height: LEGEND_HEIGHT,
-    borderTop: `dashed 1px ${theme.palette.divider}`,
     top: `calc(${CHART_HEIGHT - LEGEND_HEIGHT}px) !important`,
   },
 }));
@@ -77,7 +76,7 @@ export default function RadarGraph({ title, subheader, chart, ...other }) {
 
   return (
     <Card {...other}>
-      <CardHeader title={title} subheader={subheader} sx={{mb:5}}/>
+      <CardHeader title={title} subheader={subheader}/>
       <StyledChart
         dir="ltr"
         type="radar"
@@ -85,6 +84,7 @@ export default function RadarGraph({ title, subheader, chart, ...other }) {
         options={chartOptions}
         width="100%"
         height={350}
+        sx={{ mt: -10 }}
       />
     </Card>
   );

@@ -20,7 +20,7 @@ import ProjectUserTableRow from '../project-table-row';
 export default function ProjectTable({title, subheader, dataTable, linkURL, linkText}) {
   const [page, setPage] = useState(0);
 
-  const [rowsPerPage, setRowsPerPage] = useState(10);
+  const [rowsPerPage, setRowsPerPage] = useState(8);
 
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
@@ -73,7 +73,7 @@ export default function ProjectTable({title, subheader, dataTable, linkURL, link
           count={dataTable.length}
           rowsPerPage={rowsPerPage}
           onPageChange={handleChangePage}
-          rowsPerPageOptions={[10, 20]}
+          rowsPerPageOptions={[8, 16]}
           onRowsPerPageChange={handleChangeRowsPerPage}
         />
       </Card>

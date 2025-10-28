@@ -1,29 +1,32 @@
+"use client";
 import React from "react";
 import {
   Container,
   Box,
   Grid,
-  useMediaQuery, 
-  useTheme
+  useMediaQuery,
+  useTheme,
 } from "@mui/material";
-import PieChart from '../pie-chart';
-import RadarGraph from '../radar-graph';
-import ProfileCard from "./profile-card"
-import ProjectTable from './project-view'
+
+import PieChart from "../pie-chart";
+import RadarGraph from "../radar-graph";
+import ProfileCard from "./profile-card";
+import ProjectTable from "./project-view";
+import CertificationGrid from "./certifications";
+import TimeLineVisual from "../timeline-visual";
+import ImageCard from "../animated-folder-Card";
+import BarChartVertical from "../bar-chart-vertical";
+import BarChartHorizontal from "../bar-chart-horizontal";
 import WidgetSummary from '../widget-summary';
-import TimeLineVisual from '../timeline-visual';
-import ImageCard from '../animated-folder-Card';
-import BarChartVertical from '../bar-chart-vertical';
-import BarChartHorizontal from '../bar-chart-horizontal';
-import { skills } from '../../config/skills';
-import { InterPersonalData } from '../../config/interpersonal';
-import { engineeringJourney } from '../../config/engineering-journey';
-import { projectList } from '../../config/projects';
-import { labelsProjectCount, seriesProjectCount } from '../../config/project-count';
-import { projectDiversity } from '../../config/project-diversity'
+import { skills } from "../../config/skills";
+import { InterPersonalData } from "../../config/interpersonal";
+import { engineeringJourney } from "../../config/engineering-journey";
+import { projectList } from "../../config/projects";
+import { labelsProjectCount, seriesProjectCount } from "../../config/project-count";
+import { projectDiversity } from "../../config/project-diversity";
+import { certifications } from "../../config/certification";
 
-
-export default function AppView({}) {
+export default function AppView() {
   const theme = useTheme();
   const isLarge = useMediaQuery(theme.breakpoints.up("lg"));
 
@@ -39,25 +42,30 @@ export default function AppView({}) {
             <ProfileCard />
           </Grid>
 
-          {/* Left: Top Skills + Featured Projects */}
+          {/* Left: Skills + Projects */}
           <Grid item xs={12} lg={8}>
             <Box sx={{ display: "flex", flexDirection: "column", gap: 4 }}>
               <BarChartHorizontal
-                title="Top Skills"
-                subheader="Featured Skills to Visualize"
+                title="Core Engineering Stack"
+                subheader="Tools and technologies I use to design end-to-end systems, from backend APIs to data processing and deployment automation"
                 chart={{ series: skills }}
               />
-              <ProjectTable title="Highlighted Builds" subheader="Each project combines design thinking with system engineering — focusing on scalability, automation, and measurable impact." linkURL="https://github.com/ChaudharyAnshul" linkText="GitHub" dataTable={projectList}  />
-              </Box>
+              <ProjectTable
+                title="Highlighted Builds"
+                subheader="Each project combines design thinking with system engineering — focusing on scalability, automation, and measurable impact."
+                linkURL="https://github.com/ChaudharyAnshul"
+                linkText="GitHub"
+                dataTable={projectList}
+              />
+            </Box>
           </Grid>
 
-
-          {/* Right: What I Do + Engineering Journey +  Interpersonal stacked */}
+          {/* Right: What I Do + Journey + Mindset */}
           <Grid item xs={12} lg={4}>
             <Box sx={{ display: "flex", flexDirection: "column", gap: 4 }}>
               <ImageCard
-                title="What Do I Do?"
-                subheader="Feel Free to Checkout Individual Work"
+                title="Engineering Focus Areas"
+                subheader="My projects span across full-stack, data engineering, and AI"
               />
               <TimeLineVisual
                 title="Engineering Journey"
@@ -71,24 +79,44 @@ export default function AppView({}) {
               />
             </Box>
           </Grid>
+
+          {/* Certifications Section — moved to bottom */}
+          <Grid item xs={12}>
+            <Grid container spacing={4}>
+              <CertificationGrid certifications={certifications} />
+            </Grid>
+          </Grid>
+
+          {/* Project diversity */}
+          <Grid item xs={12} md={6} lg={4}>
+            <PieChart
+              title="Project Diversity"
+              subheader="Visualizing where my engineering hours go."
+              chart={{series: projectDiversity}}
+            />
+          </Grid>
+
+          {/* line chart project count vs technology */}
+          <Grid item xs={12} md={6} lg={8}>
+            <BarChartVertical
+              title="Codebase Insights"
+              chart={{labels:labelsProjectCount, series:seriesProjectCount}}
+            />
+          </Grid>
+
         </Grid>
       ) : (
-        // 📱 MOBILE / TABLET LAYOUT
+        // 📱 MOBILE / TABLET (unchanged)
         <Grid container spacing={4}>
-          {/* 1️⃣ Profile */}
           <Grid item xs={12}>
             <ProfileCard />
           </Grid>
-
-          {/* 2️⃣ What Do I Do */}
           <Grid item xs={12}>
             <ImageCard
               title="What Do I Do?"
               subheader="Feel Free to Checkout Individual Work"
             />
           </Grid>
-
-          {/* 3️⃣ Top Skills */}
           <Grid item xs={12}>
             <BarChartHorizontal
               title="Top Skills"
@@ -96,8 +124,6 @@ export default function AppView({}) {
               chart={{ series: skills }}
             />
           </Grid>
-
-          {/* 4️⃣ Interpersonal */}
           <Grid item xs={12}>
             <RadarGraph
               title="Interpersonal Competencies"
