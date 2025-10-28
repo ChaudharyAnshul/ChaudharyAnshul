@@ -20,7 +20,7 @@ import ProjectUserTableRow from '../project-table-row';
 export default function ProjectTable({title, subheader, dataTable, linkURL, linkText}) {
   const [page, setPage] = useState(0);
 
-  const [rowsPerPage, setRowsPerPage] = useState(6);
+  const [rowsPerPage, setRowsPerPage] = useState(10);
 
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
@@ -33,12 +33,12 @@ export default function ProjectTable({title, subheader, dataTable, linkURL, link
   return (
       <Card>
         <CardHeader 
-          title={title} 
-          subheader={
-            <Typography variant="subtitle2">
-              {subheader} <Link href={linkURL} target="_blank">{linkText}</Link>
+          title={
+            <Typography variant="h6">
+              {title} - <Link href={linkURL} target="_blank">{linkText}</Link>
             </Typography>
           } 
+          subheader={subheader} 
           sx={{ mb: 2.5 }} 
         />
         <Scrollbar>
@@ -73,7 +73,7 @@ export default function ProjectTable({title, subheader, dataTable, linkURL, link
           count={dataTable.length}
           rowsPerPage={rowsPerPage}
           onPageChange={handleChangePage}
-          rowsPerPageOptions={[6, 12]}
+          rowsPerPageOptions={[10, 20]}
           onRowsPerPageChange={handleChangeRowsPerPage}
         />
       </Card>
