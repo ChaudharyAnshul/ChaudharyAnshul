@@ -1,5 +1,3 @@
-"use client";
-import React from "react";
 import {
   Container,
   Box,
@@ -80,11 +78,67 @@ export default function AppView() {
             </Box>
           </Grid>
 
+          
+
+          {/* Project diversity */}
+          <Grid item xs={12} md={6} lg={4}>
+            <PieChart
+              title="Project Diversity"
+              subheader="Visualizing where my engineering hours go."
+              chart={{series: projectDiversity}}
+            />
+          </Grid>
+
+          {/* line chart project count vs technology */}
+          <Grid item xs={12} md={6} lg={8}>
+            <BarChartVertical
+              title="Codebase Insights"
+              chart={{labels:labelsProjectCount, series:seriesProjectCount}}
+            />
+          </Grid>
+
           {/* Certifications Section — moved to bottom */}
           <Grid item xs={12}>
             <Grid container spacing={4}>
               <CertificationGrid certifications={certifications} />
             </Grid>
+          </Grid>
+
+        </Grid>
+      ) : (
+        // 📱 MOBILE / TABLET (unchanged)
+        <Grid container spacing={4}>
+          <Grid item xs={12}>
+            <ProfileCard />
+          </Grid>
+          <Grid item xs={12}>
+            <BarChartHorizontal
+              title="Top Skills"
+              subheader="Featured Skills to Visualize"
+              chart={{ series: skills }}
+            />
+          </Grid>
+          <Grid item xs={12}>
+            <ImageCard
+              title="What Do I Do?"
+              subheader="Feel Free to Checkout Individual Work"
+            />
+          </Grid>
+          <Grid item xs={12}>
+            <RadarGraph
+              title="Interpersonal Competencies"
+              subheader="Compared with Average"
+              chart={InterPersonalData}
+            />
+          </Grid>
+          <Grid item xs={12}>
+            <ProjectTable
+              title="Highlighted Builds"
+              subheader="Each project combines design thinking with system engineering — focusing on scalability, automation, and measurable impact."
+              linkURL="https://github.com/ChaudharyAnshul"
+              linkText="GitHub"
+              dataTable={projectList}
+            />
           </Grid>
 
           {/* Project diversity */}
@@ -104,32 +158,10 @@ export default function AppView() {
             />
           </Grid>
 
-        </Grid>
-      ) : (
-        // 📱 MOBILE / TABLET (unchanged)
-        <Grid container spacing={4}>
           <Grid item xs={12}>
-            <ProfileCard />
-          </Grid>
-          <Grid item xs={12}>
-            <ImageCard
-              title="What Do I Do?"
-              subheader="Feel Free to Checkout Individual Work"
-            />
-          </Grid>
-          <Grid item xs={12}>
-            <BarChartHorizontal
-              title="Top Skills"
-              subheader="Featured Skills to Visualize"
-              chart={{ series: skills }}
-            />
-          </Grid>
-          <Grid item xs={12}>
-            <RadarGraph
-              title="Interpersonal Competencies"
-              subheader="Compared with Average"
-              chart={InterPersonalData}
-            />
+            <Grid container spacing={4}>
+              <CertificationGrid certifications={certifications} />
+            </Grid>
           </Grid>
         </Grid>
       )}

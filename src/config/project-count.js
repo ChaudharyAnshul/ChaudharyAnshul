@@ -1,6 +1,31 @@
 export const labelsProjectCount = [
   'Python',
   'SQL / NoSQL',
+  'React / Next.js',
+  'APIs',
+  'Google Cloud Platform',
+  'ETL / ELT',
+  'Airflow',
+  'AI Agents',
+  'Snowflake / BigQuery',
+  'Docker & CI/CD',
+  'Terraform / IaC',
+  'System Design',
+];
+
+export const seriesProjectCount = [
+  {
+    name: 'Anshul Chaudhary',
+    type: 'column',
+    fill: 'solid',
+    data: [20, 10, 9, 13, 8, 7, 6, 5, 9, 7, 4, 7],
+  },
+];
+
+
+export const labelsProjectCount2 = [
+  'Python',
+  'SQL / NoSQL',
   'React',
   'APIs', 
   'AWS',
@@ -12,7 +37,7 @@ export const labelsProjectCount = [
   'Docker',
 ];
 
-export const seriesProjectCount = [
+export const seriesProjectCount2 = [
   {
     name: 'Anshul Chaudhary',
     type: 'column',
